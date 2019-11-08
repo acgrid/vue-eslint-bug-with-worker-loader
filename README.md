@@ -1,24 +1,15 @@
-# novel-quick-utils
+# CLI output issue reproducing repo
 
-## Project setup
+## How to
+After cloning this repo:
 ```
 yarn install
-```
-
-### Compiles and hot-reloads for development
-```
 yarn serve
 ```
+The dev server will start saying no errors are found.
 
-### Compiles and minifies for production
-```
-yarn build
-```
+However, you can see a line comment with bad indent in `worker/test.js`.
 
-### Lints and fixes files
-```
-yarn lint
-```
+Just edit that file, for example, delete the blank line, a `WARNING with 0 errors` will display after compiling.
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+See `reproduce.gif` for the screenshot.
