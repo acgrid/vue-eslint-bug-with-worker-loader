@@ -6,7 +6,7 @@
 
 <script>
 // @ is an alias to /src
-import Worker from 'worker-loader!../worker/test'
+import Worker from 'worker-loader!../worker/test.worker'
 // this line violates eslint
 export default {
   name: 'home',
